@@ -5,18 +5,18 @@
 }
 
 #sidebar-header {
-    font-family: 'Open Sans';
+    font-family: 'Source Sans Pro';
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     padding: 12px;
-    background-color: #8695B1;
+    background-color: #393e41;
     margin-bottom: 24px;
     color: white;
 }
 
 #generate-button {
-    background-color: rgba( 59,143, 65,1);
+    background-color: #393e41;
     border-color: rgba( 59,143, 65,1);
     border-radius: 0px;
     margin: 12px;
@@ -24,7 +24,7 @@
 }
 
 #copy-button {
-    background-color: #0046F3;
+    background-color: #393e41;
     border-color: #001C61;
     margin: 12px;
     color: white;

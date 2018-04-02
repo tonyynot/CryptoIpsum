@@ -1,18 +1,18 @@
 .header-container {
-    background-color: rgba(182,192,210,1);
+    background-color: #26547c;
     padding: 12px;
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(50,50,50,0.1);
-    height: 65px;
+    height: 11vw;
 }
 
 .header-container .main-header {
-    color: #202e3a;
+    color: #d3d0cb;
     margin-top: 0px;
-    font-family: 'Open Sans';
+    font-family: 'Fira Mono';
     margin-right: 24px;
     font-size: 26px;
-    font-family: "Playfair Display SC";
+    font-family: "Fira Mono";
     font-weight: bold;
     letter-spacing: 1.5px;
     vertical-align: middle;
@@ -20,7 +20,7 @@
 
 .header-container .sub-heading {
     color: #202e3a;
-    font-family: 'Roboto';
+    font-family: 'Fira Mono';
     vertical-align: middle;
 }
 
@@ -30,7 +30,7 @@
 
 @media (max-width: 768px) {
     .header-container {
-        height: 120px;
+        height: 180px;
     }
 
     .header-container .main-header {
