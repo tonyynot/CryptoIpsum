@@ -1,10 +1,9 @@
-## Crypto Ipsum
-=================
-A Blockchain and cryptocurrency themed Lorem Ipsum generator.
-[![Build Status](https://travis-ci.org/2factorauth/twofactorauth.svg)](https://travis-ci.org/2factorauth/twofactorauth)
+## Crypto Ipsum  
+=================  
+A Blockchain and cryptocurrency themed Lorem Ipsum generator.  
+[![Build Status]()
 [![License](https://img.shields.io/badge/license-mit-blue.svg?style=flat)](/LICENSE)
-[![Gitter](https://img.shields.io/gitter/room/2factorauth/twofactorauth.svg)](https://gitter.im/2factorauth/twofactorauth)
-[![Twitter](https://img.shields.io/badge/Twitter-@2faorg-blue.svg)](https://twitter.com/useNano)
+[![Twitter](https://img.shields.io/badge/Twitter-@2faorg-blue.svg)](https://twitter.com/crypto_ipsum)
 
 A directory of merchants that accept Nano cryptocurrency payments.
 
