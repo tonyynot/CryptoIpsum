@@ -1,7 +1,5 @@
 ## Crypto Ipsum  
-=================  
 A Blockchain and cryptocurrency themed Lorem Ipsum generator.  
-[![Build Status]()
 [![License](https://img.shields.io/badge/license-mit-blue.svg?style=flat)](/LICENSE)
 [![Twitter](https://img.shields.io/badge/Twitter-@2faorg-blue.svg)](https://twitter.com/crypto_ipsum)
 
