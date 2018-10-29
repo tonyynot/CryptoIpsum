@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   getSampleText(){
-    axios.get('http://hipsterjesus.com/api/?paras='+this.state.paras+'&html='+this.state.html)
+    axios.get('http://hipsterjesus.com/api?paras='+this.state.paras+'&html='+this.state.html)
     .then((response) => {
       this.setState({text: response.data.text}, function(){
         console.log(this.state);
@@ -41,7 +41,7 @@ class App extends Component {
             <label>Include HTML:</label>
             <Select value={this.state.html} onChange={this.showHtml.bind(this)} />
           </div>
-          <Output value={this.state.text} />
+          <Output value={this.state.html ? <p>{this.state.text}</p> : this.state.text} />
         </form>
       </div>
     );
