@@ -9,7 +9,6 @@ class Output extends Component {
         }
     }
 
-
     render(){
         return(
             <React.Fragment>
