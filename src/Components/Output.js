@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MyLorem from './LoremText';
 
 class Output extends Component {
     constructor(props) {
@@ -11,9 +12,12 @@ class Output extends Component {
 
     render(){
         return(
+            <React.Fragment>
             <div className="well output">
                 {this.props.value}
+                <MyLorem />
             </div>
+            </React.Fragment>
         )
     }
 }
