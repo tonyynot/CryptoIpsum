@@ -17,7 +17,7 @@ class paraInput extends Component {
 
     render(){
         return(
-            <input type="text" value={this.state.value} className="form-control" onChange={this.onChange}/>
+            <input type="number" value={this.state.value} className="form-control form-custom" onChange={this.onChange}/>
         )
     }
 }

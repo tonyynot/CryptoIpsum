@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import Output from './Components/Output';
 import ParagraphCount from './Components/Controls/ParagraphCount';
 import ParagraphInput from './Components/Controls/ParagraphInput';
