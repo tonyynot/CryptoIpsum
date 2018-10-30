@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Output from './Components/Output';
 import ParagraphCount from './Components/Controls/ParagraphCount';
+import ParagraphInput from './Components/Controls/ParagraphInput';
 
 class App extends Component {
   state= {
@@ -22,12 +23,12 @@ class App extends Component {
   render() {
     return (
       <div className="App container">
-      <h1>ReactJS Sample Text Generator</h1>
+      <h1>Crypto Ipsum: A text generator for blockchain nerds.</h1>
       <hr />
           <form className="form-inline">
           <div className="form-group">
-            <label>Include HTML:</label>
-            <ParagraphCount value={this.state.html} onChange={this.paraCount} />
+            <label>Select Paragraphs:</label>
+            <ParagraphInput value={3} onChange={this.paraCount} />
           </div>
           <Output count={this.state.paras}/>
         </form>

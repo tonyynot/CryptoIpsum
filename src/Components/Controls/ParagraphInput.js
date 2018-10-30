@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Select extends Component {
+class paraInput extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -17,15 +17,9 @@ class Select extends Component {
 
     render(){
         return(
-            <div>
-                <select className="form-control" onChange={this.onChange}>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="2">3</option>
-                </select>
-            </div>
+            <input type="text" value={this.state.value} className="form-control" onChange={this.onChange}/>
         )
     }
 }
 
-export default Select
+export default paraInput
