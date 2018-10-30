@@ -28,7 +28,7 @@ class App extends Component {
             <label>Include HTML:</label>
             <Select value={this.state.html} onChange={this.showHtml.bind(this)} />
           </div>
-          <Output value={this.state.text} />
+          <Output value={this.state.text} count={6} />
         </form>
       </div>
     );

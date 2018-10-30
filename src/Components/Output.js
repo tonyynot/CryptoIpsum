@@ -14,7 +14,7 @@ class Output extends Component {
             <React.Fragment>
             <div className="well output">
                 {this.props.value}
-                <MyLorem />
+                <MyLorem count={5}/>
             </div>
             </React.Fragment>
         )
