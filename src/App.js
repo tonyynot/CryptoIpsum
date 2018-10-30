@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Output from './Components/Output';
-import Select from './Components/Controls/Select';
+import ParagraphCount from './Components/Controls/ParagraphCount';
 
 class App extends Component {
   state= {
@@ -9,13 +9,14 @@ class App extends Component {
     html: true,
     text: ''
   }
-  
-  // componentDidMount(){
-  //   this.getSampleText();
-  // }
 
-  showHtml(x){
-    this.setState({html: x}, this.getSampleText);
+  constructor(props){
+    super(props);
+    this.paraCount=this.paraCount.bind(this);
+  }
+
+  paraCount(x){
+    this.setState({paras: x});
   }
 
   render() {
@@ -26,9 +27,9 @@ class App extends Component {
           <form className="form-inline">
           <div className="form-group">
             <label>Include HTML:</label>
-            <Select value={this.state.html} onChange={this.showHtml.bind(this)} />
+            <ParagraphCount value={this.state.html} onChange={this.paraCount} />
           </div>
-          <Output value={this.state.text} count={6} />
+          <Output count={this.state.paras}/>
         </form>
       </div>
     );

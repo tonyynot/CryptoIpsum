@@ -8,7 +8,6 @@ class Select extends Component {
         }
     }
 
-
     onChange = (e) => {
         console.log(e);
         this.setState({value: e.target.value}, function(){
@@ -22,7 +21,6 @@ class Select extends Component {
                 <select className="form-control" onChange={this.onChange}>
                     <option value="true">Yes</option>
                     <option value="false">No</option>
-                    
                 </select>
             </div>
         )
