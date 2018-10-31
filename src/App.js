@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Output from './Components/Output';
 import ParagraphCount from './Components/Controls/ParagraphCount';
 import ParagraphInput from './Components/Controls/ParagraphInput';
+import { FaCopy } from 'react-icons/fa';
+
 
 class App extends Component {
   state= {
@@ -44,7 +46,7 @@ class App extends Component {
           <div className="form-group">
             <label>Select Paragraphs:</label>
             <ParagraphInput value={3} onChange={this.paraCount} />
-            <button onClick={this.copy}>Copy</button>
+            <button onClick={this.copy}><FaCopy /></button>
           </div>
           <Output count={this.state.paras}/>
           <textarea id="ghost" style={{ opacity: '0' }}></textarea>

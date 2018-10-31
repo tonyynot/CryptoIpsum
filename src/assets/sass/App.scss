@@ -30,9 +30,6 @@ body {
     transform: rotate(360deg);
   }
 }
-// .form-custom {
-
-// }
 
 .form-inline .form-group {
   text-align: center;
@@ -41,11 +38,29 @@ body {
 }
 .form-inline .form-control {
   text-align: center;
-  width: 17%;
+  width: 13%;
   font-size: 18px;
+  margin-left: 16px;
 }
 
 button {
   background: transparent;
   border-radius: 6px 6px;
+  color: $secondary-color;
+  margin-left: 16px;
+  border-style: solid;
+  padding: 7px;
+  cursor: pointer;
+  width: 12%;
+  border-color: $secondary-color;
+  &:hover {
+    color: $primary-color;
+    background-color: $secondary-color;
+  }
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
