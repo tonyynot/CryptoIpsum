@@ -19,6 +19,22 @@ class App extends Component {
     this.setState({paras: x});
   }
 
+  copy() {
+    let el = document.getElementById('mainText'),
+        ghost = document.getElementById('ghost'),
+        text = el.innerText;
+
+    // Fill the ghost element and select it for copy process
+    ghost.value = text;
+    ghost.select();
+
+    // Copy selected ghost element
+    document.execCommand('copy');
+
+    // Feedback
+    alert('Copied')
+  }
+
   render() {
     return (
       <div className="App container">
@@ -28,8 +44,10 @@ class App extends Component {
           <div className="form-group">
             <label>Select Paragraphs:</label>
             <ParagraphInput value={3} onChange={this.paraCount} />
+            <button onClick={this.copy}>Copy</button>
           </div>
           <Output count={this.state.paras}/>
+          <textarea id="ghost" style={{ opacity: '0' }}></textarea>
         </form>
       </div>
     );
