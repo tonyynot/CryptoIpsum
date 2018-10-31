@@ -2,7 +2,7 @@ body {
   background-color: $primary-color;
 }
 .App {
-  text-align: center;
+  text-align: left;
   color: $secondary-color;
 }
 .App-logo {
@@ -30,8 +30,17 @@ body {
     transform: rotate(360deg);
   }
 }
-.form-custom {
+// .form-custom {
+
+// }
+
+.form-inline .form-group {
   text-align: center;
-  width: 10%;
+  padding-bottom: 2rem;
+
+}
+.form-inline .form-control {
+  text-align: center;
+  width: 17%;
   font-size: 18px;
 }

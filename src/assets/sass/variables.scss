@@ -2,3 +2,13 @@ $primary-color: #1E1E24;
 $secondary-color: #F0FFCE;
 
 $link-color: #FF9F1C;
+
+$small-screen: "@media (min-width: @screen-sm-min)";
+$medium-screen: "@media (min-width: @screen-md-min)";
+$large-screen: "@media (min-width: @screen-lg-min)";
+
+@mixin small-screen {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+      @content;
+    }
+  }
